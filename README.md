@@ -1,4 +1,4 @@
-# Testable Profile Card by Madu Jang
+# Testable Profile Card Component by Madu Jang
 
 ## Table of contents
 
@@ -19,7 +19,7 @@ The task is to build a small, accessible, responsive Profile Card component/page
 
 ### Screenshot
 
-![Profile Card Component Screenshot](./images/screenshot.png)
+![Profile Card Component Screenshot](./assets/screenshot.png)
 
 ### Links
 
