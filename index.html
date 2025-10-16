@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card Component</title>
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <script src="https://kit.fontawesome.com/be95f07fec.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main class="main-page">
+      <article class="profile-card" data-testid="test-profile-card">
+        <header class="profile-header">
+          <figure>
+            <img
+              src="./assets/user-avatar.jpg"
+              class="user-avatar"
+              alt="user avatar"
+              data-testid="test-user-avatar"
+            />
+          </figure>
+          <h2 aria-label="User name" data-testid="test-user-name">Madu Jang</h2>
+        </header>
+        <hr />
+        <main class="main-article">
+          <p data-testid="test-user-bio">
+            I am a skilled Frontend Developer with great problem solving skills.
+          </p>
+          <hr />
+          <section class="sections">
+            <section>
+              <h2 aria-label="User hobbies">Hobbies</h2>
+              <ul data-testid="test-user-hobbies">
+                <li>Playing and watching Basketball</li>
+                <li>Listening to music</li>
+                <li>Video games</li>
+              </ul>
+            </section>
+            <section>
+              <h2 aria-label="User dislikes">Dislikes</h2>
+              <ul data-testid="test-user-dislikes">
+                <li>Dishonesty</li>
+                <li>Entitlement</li>
+                <li>Arsenal Fans</li>
+              </ul>
+            </section>
+          </section>
+        </main>
+        <hr />
+        <footer>
+          <nav class="social-links" data-testid="test-user-social-links">
+            <a href="https://x.com/madu_jang" class="social-link" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter"
+              ><i class="fa-brands fa-square-x-twitter fa-lg"></i></a
+            >
+            <a href="https://github.com/MJspitta" class="social-link" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github"
+              ><i class="fa-brands fa-square-github fa-lg"></i></a
+            >
+            <a href="https://www.linkedin.com/in/madu-jang/" class="social-link" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin"
+              ><i class="fa-brands fa-linkedin fa-lg"></i></a
+            >
+          </nav>
+          <p class="time">User time: <span id="user-time" data-testid="test-user-time"></span></p>
+        </footer>
+      </article>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
