@@ -181,6 +181,10 @@ i {
   margin-bottom: 2rem;
 }
 
+.about-section > p {
+  line-height: 1.5;
+}
+
 /* Contact Page */
 
 .contact-page {
