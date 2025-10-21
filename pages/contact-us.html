@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact || Profile Card Component</title>
+
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="logo"><h1>MJ</h1></div>
+      <nav class="page-links">
+        <a href="../index.html" class="page-link">Home</a>
+        <a href="./about-me.html" class="page-link">About</a>
+        <a href="./contact-us.html" class="page-link active-link">Contact</a>
+      </nav>
+    </header>
+
+    <main class="contact-page">
+      <div class="contact-header">
+        <h2 class="page-heading-text">Contact Us</h2>
+        <p>We'll get back to you within 24 hours</p>
+      </div>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-field">
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            data-testid="test-contact-name"
+          />
+          <span
+            id="name-error"
+            class="error-message"
+            aria-describedby="name"
+            aria-live="polite"
+            data-testid="test-contact-error-name"
+          ></span>
+        </div>
+        <div class="form-field">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            data-testid="test-contact-email"
+          />
+          <span
+            id="email-error"
+            class="error-message"
+            aria-describedby="email"
+            aria-live="polite"
+            data-testid="test-contact-error-email"
+          ></span>
+        </div>
+        <div class="form-field">
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            data-testid="test-contact-subject"
+          />
+          <span
+            id="subject-error"
+            class="error-message"
+            aria-describedby="subject"
+            aria-live="polite"
+            data-testid="test-contact-error-subject"
+          ></span>
+        </div>
+        <div class="form-field">
+          <label for="message">Message:</label>
+          <textarea
+            type="text"
+            name="message"
+            id="message"
+            rows="5"
+            data-testid="test-contact-message"
+          ></textarea>
+          <span
+            id="message-error"
+            class="error-message"
+            aria-describedby="name"
+            aria-live="polite"
+            data-testid="test-contact-error-message"
+          ></span>
+        </div>
+        <button
+          type="submit"
+          class="submit-btn"
+          id="submit-btn"
+          data-testid="test-contact-submit"
+        >
+          Submit Message
+        </button>
+        <p
+          class="success-message"
+          id="success-message"
+          data-testid="test-contact-success"
+        ></p>
+      </form>
+    </main>
+
+    <script src="../scripts/contact-form.js"></script>
+  </body>
+</html>
